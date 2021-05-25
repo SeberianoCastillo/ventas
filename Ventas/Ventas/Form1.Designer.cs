@@ -33,7 +33,7 @@
             // 
             // btnProcesar
             // 
-            this.btnProcesar.Location = new System.Drawing.Point(62, 93);
+            this.btnProcesar.Location = new System.Drawing.Point(120, 93);
             this.btnProcesar.Name = "btnProcesar";
             this.btnProcesar.Size = new System.Drawing.Size(166, 57);
             this.btnProcesar.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(387, 268);
             this.Controls.Add(this.btnProcesar);
             this.Name = "frmHolaMundo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
