@@ -16,7 +16,6 @@ namespace Ventas
         {
             InitializeComponent();
         }
-
         private void btnProcesar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Piensa, sueña, cree y atrévete");
