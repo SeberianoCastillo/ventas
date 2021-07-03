@@ -57,7 +57,6 @@
             this.medicoTextBox = new System.Windows.Forms.TextBox();
             this.motivoCitaTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
-            this.listaPacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.precioTextBox = new System.Windows.Forms.TextBox();
             this.listaPacientesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +66,7 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listaPacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             fechaLabel = new System.Windows.Forms.Label();
             horaLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -76,8 +76,8 @@
             precioLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listaPacientesBindingNavigator)).BeginInit();
             this.listaPacientesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaPacientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaPacientesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaPacientesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // fechaLabel
@@ -321,10 +321,6 @@
             this.nombreTextBox.Size = new System.Drawing.Size(210, 20);
             this.nombreTextBox.TabIndex = 1;
             // 
-            // listaPacientesBindingSource
-            // 
-            this.listaPacientesBindingSource.DataSource = typeof(BL.CitasMedicas.Paciente);
-            // 
             // precioLabel
             // 
             precioLabel.AutoSize = true;
@@ -402,6 +398,10 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "Precio";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
+            // listaPacientesBindingSource
+            // 
+            this.listaPacientesBindingSource.DataSource = typeof(BL.CitasMedicas.Paciente);
+            // 
             // FormCrearCitaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -423,14 +423,15 @@
             this.Controls.Add(nombreLabel);
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.listaPacientesBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormCrearCitaMedica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Cita Medica";
             ((System.ComponentModel.ISupportInitialize)(this.listaPacientesBindingNavigator)).EndInit();
             this.listaPacientesBindingNavigator.ResumeLayout(false);
             this.listaPacientesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaPacientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaPacientesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaPacientesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
