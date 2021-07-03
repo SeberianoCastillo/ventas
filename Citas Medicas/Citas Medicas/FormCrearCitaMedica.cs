@@ -67,9 +67,14 @@ namespace Citas_Medicas
         {
             if (idTextBox.Text != "")
             {
-                var id = Convert.ToInt32(idTextBox.Text);
-                Eliminar(id);
+                var resultado = MessageBox.Show("¿Desea Eliminar esta Cita?", "Eliminar Cita", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
+                {
+                    var id = Convert.ToInt32(idTextBox.Text);
+                    Eliminar(id);
+                }
             }
+
         }
 
         private void Eliminar(int id)

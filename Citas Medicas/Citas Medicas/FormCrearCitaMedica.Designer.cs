@@ -424,6 +424,7 @@
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.listaPacientesBindingNavigator);
             this.Name = "FormCrearCitaMedica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Cita Medica";
             ((System.ComponentModel.ISupportInitialize)(this.listaPacientesBindingNavigator)).EndInit();
             this.listaPacientesBindingNavigator.ResumeLayout(false);

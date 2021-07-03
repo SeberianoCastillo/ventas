@@ -57,7 +57,7 @@ namespace BL.CitasMedicas
             paciente3.Medico = "Internista";
             paciente3.Fecha = "01/08/2021";
             paciente3.Hora = "10:00";
-            paciente2.Precio = 700.00;
+            paciente3.Precio = 700.00;
 
             ListaPacientes.Add(paciente3);
         }
